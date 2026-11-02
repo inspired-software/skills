@@ -222,8 +222,8 @@ Before considering a translation pass complete:
 
 - [skip-icons](../skip-icons/SKILL.md) — the `Label { Text } icon: { Image }` form is also the localization-correct shape; the two patterns share a syntax.
 - [building-skip-ui](../building-skip-ui/SKILL.md) — where the bundle-aware `Text` constructor fits into the broader view-code surface.
-- [skip-ui-automation](../../../skip-testing-deployment/skills/skip-ui-automation/SKILL.md) — locale-aware Maestro flows that generate the per-language screenshots used by fastlane.
-- [skip-deployment](../../../skip-testing-deployment/skills/skip-deployment/SKILL.md) — where `skip verify` and `skip meta index` fit in the release pipeline.
+- `skip-ui-automation` — locale-aware Maestro flows that generate the per-language screenshots used by fastlane.
+- `skip-deployment` — where `skip verify` and `skip meta index` fit in the release pipeline.
 - The xcstrings JSON schema: [`references/xcstrings-schema.md`](references/xcstrings-schema.md).
 - Fastlane directory tree, byte budgets, validation: [`references/fastlane-metadata.md`](references/fastlane-metadata.md).
 - BCP-47 → App Store → Play language-code mapping: [`references/language-codes.md`](references/language-codes.md).

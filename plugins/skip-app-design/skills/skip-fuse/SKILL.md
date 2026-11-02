@@ -321,7 +321,7 @@ skip android test --android-serial emulator-5554
 skip android test --android-serial auto   # auto-detect, prefer emulators
 ```
 
-For the broader test-suite story (parity testing across iOS and Android, `XCSkipTests` harness, Robolectric — all of which apply to Lite, not Fuse), see [skip-testing](../../../skip-testing-deployment/skills/skip-testing/SKILL.md).
+For the broader test-suite story (parity testing across iOS and Android, `XCSkipTests` harness, Robolectric — all of which apply to Lite, not Fuse), see `skip-testing`.
 
 ## Accessing the Android Context
 
@@ -362,4 +362,4 @@ You'll see them appear in `Package.resolved` and the SwiftPM build graph but rar
 - [skip-lite-transpilation](../skip-lite-transpilation/SKILL.md) — the parallel skill for Lite mode. Rules from there do **not** apply to Fuse files (no integer overflow concerns, no `Double == Int` issue, etc.), but apply unchanged to any `#if SKIP` block within a Fuse module.
 - [building-skip-ui](../building-skip-ui/SKILL.md) — view code, which is the same in both modes. The visibility rule (no `private` views/properties) is enforced more strictly in Fuse.
 - [skip-frameworks](../skip-frameworks/SKILL.md) — most frameworks work in both modes. Pay attention to per-framework notes on Fuse compatibility.
-- [skip-testing](../../../skip-testing-deployment/skills/skip-testing/SKILL.md) — `swift test` on the Swift side; `skip android test` for the Fuse-on-Android side.
+- `skip-testing` — `swift test` on the Swift side; `skip android test` for the Fuse-on-Android side.

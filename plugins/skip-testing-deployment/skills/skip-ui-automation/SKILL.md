@@ -270,6 +270,6 @@ The `runFlow: when: visible:` (or `notVisible:`) form lets the helper be a no-op
 ## Cross-references
 
 - For logic-level (non-UI) tests that run on both platforms via `XCSkipTests`, see [skip-testing](../skip-testing/SKILL.md).
-- For the icon side of `.accessibilityIdentifier` — why icon-bearing buttons need both an `.accessibilityLabel(...)` and a `.symbolset`-backed `Image(...)` — see [skip-icons](../../../skip-app-design/skills/skip-icons/SKILL.md).
-- For localization of the `Text(_, bundle: .module, comment:)` strings the flow's `assertVisible:` lines match against, see [skip-localization](../../../skip-app-design/skills/skip-localization/SKILL.md).
-- For end-to-end how `skip app launch` and `maestro` fit into the build process, see [skip-app-walkthrough](../../../skip-app-design/skills/skip-app-walkthrough/SKILL.md).
+- For the icon side of `.accessibilityIdentifier` — why icon-bearing buttons need both an `.accessibilityLabel(...)` and a `.symbolset`-backed `Image(...)` — see `skip-icons`.
+- For localization of the `Text(_, bundle: .module, comment:)` strings the flow's `assertVisible:` lines match against, see `skip-localization`.
+- For end-to-end how `skip app launch` and `maestro` fit into the build process, see `skip-app-walkthrough`.

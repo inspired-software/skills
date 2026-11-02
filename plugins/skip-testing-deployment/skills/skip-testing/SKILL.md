@@ -149,7 +149,7 @@ This can cause different failure counts per platform.
 
 Kotlin compilation errors appear in `testSkipModule()` output with `.kt` file paths and line numbers. Cross-reference with Swift source.
 
-When a Kotlin compile error references a transpilation pattern (integer overflow, Double-vs-Int comparison, `Array.remove(atOffsets:)` outside SwiftUI, `Foundation.sqrt` qualification, etc.), the underlying rule is in [skip-lite-transpilation](../../../skip-app-design/skills/skip-lite-transpilation/SKILL.md) — fix the Swift source per that skill and re-run `swift test --filter XCSkipTests` to confirm.
+When a Kotlin compile error references a transpilation pattern (integer overflow, Double-vs-Int comparison, `Array.remove(atOffsets:)` outside SwiftUI, `Foundation.sqrt` qualification, etc.), the underlying rule is in `skip-lite-transpilation` — fix the Swift source per that skill and re-run `swift test --filter XCSkipTests` to confirm.
 
 ## UI tests are a separate concern
 

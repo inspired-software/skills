@@ -91,7 +91,7 @@ One walkthrough file per language (asserts on the language's strings) plus per-p
 - `Darwin/fastlane/screenshots/<locale>/` for App Store Connect.
 - `Android/fastlane/metadata/android/<locale>/images/phoneScreenshots/` for Google Play.
 
-For the App Store / Play Store locale-code mapping (`fr` → `fr-FR` on both, `zh-Hans` → `zh-Hans` on App Store but `zh-CN` on Play), see the [skip-localization](../../../../skip-app-design/skills/skip-localization/SKILL.md) skill.
+For the App Store / Play Store locale-code mapping (`fr` → `fr-FR` on both, `zh-Hans` → `zh-Hans` on App Store but `zh-CN` on Play), see the `skip-localization` skill.
 
 ## Typical end-to-end localised screenshot workflow
 

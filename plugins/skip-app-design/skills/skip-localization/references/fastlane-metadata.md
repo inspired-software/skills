@@ -124,7 +124,7 @@ Storefront metadata changes with every release. When asked to "update the transl
 
 Each store accepts up to 10 phone screenshots per locale; both require at least 1 per locale you list. The filename prefix `N_` (1_, 2_, ...) controls display order.
 
-Generate these from Maestro flows — see the locale-aware walkthrough pattern in [skip-ui-automation](../../../../skip-testing-deployment/skills/skip-ui-automation/references/locale-switching.md).
+Generate these from Maestro flows — see the locale-aware walkthrough pattern in `skip-ui-automation` (`references/locale-switching.md`).
 
 ## File-by-file checklist
 

@@ -17,7 +17,7 @@ skip checkup
 You also need:
 - **Xcode** with Command Line Tools (for `xcodebuild` and the iOS Simulator).
 - **Android Studio** with at least one AVD created (for the SDK and an emulator). The Skip tooling assumes one is ready.
-- **Maestro** (`brew install mobile-dev-inc/tap/maestro`) if you intend to write UI flows — see [skip-ui-automation](../../../skip-testing-deployment/skills/skip-ui-automation/SKILL.md).
+- **Maestro** (`brew install mobile-dev-inc/tap/maestro`) if you intend to write UI flows — see `skip-ui-automation`.
 
 ## Pre-flight: boot simulators yourself before launching
 

@@ -72,7 +72,7 @@ skip icon icon-1024.png                          # source is a positional argume
 skip icon --background "#1A73E8" --inset 0.25 logo.svg
 ```
 
-See [skip-icons](../../../skip-app-design/skills/skip-icons/SKILL.md) for the full flag list and the in-app `.symbolset` workflow.
+See `skip-icons` for the full flag list and the in-app `.symbolset` workflow.
 
 ## iOS Distribution
 
@@ -196,7 +196,7 @@ jobs:
 
 App Store Connect and Google Play storefront metadata — title, description, keywords, release notes, screenshots — lives under `Darwin/fastlane/metadata/<locale>/` and `Android/fastlane/metadata/android/<locale>/`. Each file has a hard byte-budget limit (titles 30 bytes, Play short_description 80 bytes, descriptions 4000 bytes), and the store-specific locale codes (`de-DE`, `pt-BR`, `zh-Hans`/`zh-CN`, etc.) don't exactly match the BCP-47 codes used in `Localizable.xcstrings`. Run `skip verify` and `skip meta index` to catch overruns and schema issues before submission.
 
-For the full localization workflow — in-app `xcstrings` translation, `InfoPlist.xcstrings`, fastlane metadata, byte budgets, language-code mapping per store — see the [skip-localization](../../../skip-app-design/skills/skip-localization/SKILL.md) skill.
+For the full localization workflow — in-app `xcstrings` translation, `InfoPlist.xcstrings`, fastlane metadata, byte budgets, language-code mapping per store — see the `skip-localization` skill.
 
 ## Validation before exporting
 

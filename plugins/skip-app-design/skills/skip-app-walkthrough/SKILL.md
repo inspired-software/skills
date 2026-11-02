@@ -19,10 +19,10 @@ If you're starting a new app, read this top to bottom. If you're picking up an e
 | 4 | Add icons via `.symbolset` resources (never `systemName:` / `systemImage:`) | [skip-icons](../skip-icons/SKILL.md) |
 | 5 | Write Swift model code that transpiles cleanly | [skip-lite-transpilation](../skip-lite-transpilation/SKILL.md) (Lite) or [skip-fuse](../skip-fuse/SKILL.md) (Fuse) |
 | 6 | Add optional frameworks (SQL, Firebase, Web, AV, …) | [skip-frameworks](../skip-frameworks/SKILL.md) |
-| 7 | Write tests (Swift Testing or XCTest) | [skip-testing](../../../skip-testing-deployment/skills/skip-testing/SKILL.md) |
-| 8 | Drive the running app with `skip app launch` + Maestro | [skip-ui-automation](../../../skip-testing-deployment/skills/skip-ui-automation/SKILL.md) |
+| 7 | Write tests (Swift Testing or XCTest) | `skip-testing` |
+| 8 | Drive the running app with `skip app launch` + Maestro | `skip-ui-automation` |
 | 9 | Localise the catalog + iOS Info.plist + fastlane metadata | [skip-localization](../skip-localization/SKILL.md) |
-| 10 | Export, sign, distribute to the App Store and Google Play | [skip-deployment](../../../skip-testing-deployment/skills/skip-deployment/SKILL.md) |
+| 10 | Export, sign, distribute to the App Store and Google Play | `skip-deployment` |
 
 ## Phase 1 — Lite or Fuse?
 
@@ -103,7 +103,7 @@ swift test --filter XCSkipTests               # only the transpiled side
 swift test --filter MyModelTests.testAdd      # one Swift test
 ```
 
-→ [skip-testing](../../../skip-testing-deployment/skills/skip-testing/SKILL.md) for Swift Testing syntax, parity-test patterns, Robolectric vs. instrumented tests, and how to read a Kotlin-compile failure in `XCSkipTests` output.
+→ `skip-testing` for Swift Testing syntax, parity-test patterns, Robolectric vs. instrumented tests, and how to read a Kotlin-compile failure in `XCSkipTests` output.
 
 ## Phase 8 — Drive the running app
 
@@ -115,7 +115,7 @@ edit SwiftUI → skip app launch → eyeball both platforms → maestro test .ma
 
 The `.accessibilityIdentifier(...)`s you put on every interactive view in Phase 3 pay off here — Maestro flows reference views by ID, so a flow survives translation and Compose-vs-SwiftUI rendering differences.
 
-→ [skip-ui-automation](../../../skip-testing-deployment/skills/skip-ui-automation/SKILL.md) for the launch + Maestro inner loop, identifier conventions, and the platform-quirks reference.
+→ `skip-ui-automation` for the launch + Maestro inner loop, identifier conventions, and the platform-quirks reference.
 
 ## Phase 9 — Localise
 
@@ -135,7 +135,7 @@ skip export -c release -d ./artifacts    # both platforms, release build
 
 Sign the iOS archive and Android AAB, run `skip verify` and `skip meta index` one last time, then upload.
 
-→ [skip-deployment](../../../skip-testing-deployment/skills/skip-deployment/SKILL.md) for the `skip export` flags, code-signing setup, keystore management, ProGuard rules, and the GitHub Actions CI workflow.
+→ `skip-deployment` for the `skip export` flags, code-signing setup, keystore management, ProGuard rules, and the GitHub Actions CI workflow.
 
 ## A complete working example: `skipapp-todo`
 
@@ -162,7 +162,7 @@ If you're stuck on a specific thing rather than walking through phases:
 | "My Kotlin compile is failing in `XCSkipTests`" | [skip-lite-transpilation](../skip-lite-transpilation/SKILL.md) (Lite) or [skip-fuse](../skip-fuse/SKILL.md) (Fuse) |
 | "I need to add Firebase / SQLite / a WebView" | [skip-frameworks](../skip-frameworks/SKILL.md) |
 | "Where does this SwiftUI component go in the supported-list?" | [building-skip-ui](../building-skip-ui/SKILL.md) |
-| "How do I write a test that runs on both platforms?" | [skip-testing](../../../skip-testing-deployment/skills/skip-testing/SKILL.md) |
-| "How do I write a Maestro flow that survives translation?" | [skip-ui-automation](../../../skip-testing-deployment/skills/skip-ui-automation/SKILL.md) |
+| "How do I write a test that runs on both platforms?" | `skip-testing` |
+| "How do I write a Maestro flow that survives translation?" | `skip-ui-automation` |
 | "What's the byte budget for the Play short description?" | [skip-localization](../skip-localization/SKILL.md) |
-| "How do I sign the Android build for release?" | [skip-deployment](../../../skip-testing-deployment/skills/skip-deployment/SKILL.md) |
+| "How do I sign the Android build for release?" | `skip-deployment` |

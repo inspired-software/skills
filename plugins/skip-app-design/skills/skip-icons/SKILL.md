@@ -227,6 +227,6 @@ Then `skip app launch` and confirm both platforms now render the glyphs identica
 
 - The `Label { Text } icon: { Image }` form is also the localisation-correct shape — see [skip-localization](../skip-localization/SKILL.md) for the full String Catalog workflow.
 - For where icons fit into the broader SwiftUI-on-Skip surface, see [building-skip-ui](../building-skip-ui/SKILL.md).
-- For verifying that an icon-bearing button responds correctly to user input, see [skip-ui-automation](../../../skip-testing-deployment/skills/skip-ui-automation/SKILL.md) — the icon button needs an `.accessibilityIdentifier(...)` so Maestro can find it whether the glyph rendered or not.
+- For verifying that an icon-bearing button responds correctly to user input, see `skip-ui-automation` — the icon button needs an `.accessibilityIdentifier(...)` so Maestro can find it whether the glyph rendered or not.
 - The internal SkipUI behaviour for `systemName:` calls (the ~50-entry hardcoded map): [`references/sf-symbol-map.md`](references/sf-symbol-map.md). **Descriptive only — not a list to pick from.**
 - The `.symbolset` directory format, download URL variants, and verification checks: [`references/symbolset-anatomy.md`](references/symbolset-anatomy.md).
