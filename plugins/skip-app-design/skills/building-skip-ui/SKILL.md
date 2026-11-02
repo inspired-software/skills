@@ -1,6 +1,6 @@
 ---
 name: building-skip-ui
-description: Building SwiftUI views in Skip projects that work on both iOS and Android. Covers supported components, navigation, state management, Jetpack Compose customization, Material 3 theming, the hard rule against `Image(systemName:)` / `Label(_, systemImage:)` (use `.symbolset` resources via `Image("name", bundle: .module)` instead), and the localization-correct `Label { Text } icon: { Image }` shape.
+description: "Building SwiftUI views in Skip projects that work on both iOS and Android. Covers supported components, navigation, state management, Jetpack Compose customization, Material 3 theming, the hard rule against `Image(systemName:)` / `Label(_, systemImage:)` (use `.symbolset` resources via `Image(\"name\", bundle: .module)` instead), and the localization-correct `Label { Text } icon: { Image }` shape."
 ---
 
 # Building Skip UI
